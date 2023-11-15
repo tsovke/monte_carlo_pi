@@ -5,6 +5,7 @@ use std::time::Instant;
 pub fn estimating_pi(total: u32) -> f64 {
     let num_cpus = num_cpus::get() as u32;
 
+    println!("num_cpus:{num_cpus}");
     let mut handles = vec![];
 
     for _ in 0..num_cpus {
